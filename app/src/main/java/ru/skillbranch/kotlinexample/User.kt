@@ -150,7 +150,7 @@ class User private constructor(
     private fun normalizePhone() {
         if (phone != null) {
             phone = normalizePhone(phone)
-            requireNotNull(phone) { "invalid phone" }
+            requireNotNull(phone) { "Enter a valid phone number starting with a + and containing 11 digits" }
         }
     }
 //endregion
